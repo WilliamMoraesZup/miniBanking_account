@@ -1,20 +1,18 @@
 //
-//  AccountRouter.swift
+//  StatementRouter.swift
 //  miniBanking_account
 //
-//  Created by Bruno Vieira on 23/10/21.
+//  Created by Romulo Basso Krebs on 26/10/21.
 //
 
 import UIKit
 
-struct AccountRouter {
+struct StatementRouter {
     
     static func routeToStatement(on navigationController: UINavigationController) {
         StatementSubModule.start(on: navigationController)
     }
     
-    
-    
-    
+        
     
 }
