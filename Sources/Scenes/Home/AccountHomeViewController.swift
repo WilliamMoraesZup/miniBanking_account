@@ -23,7 +23,7 @@ final class AccountHomeViewController: ViewController,
     }
     
     @IBAction func didTapAccountButton(_ sender: UIButton) {
-        print("oi")
+      
         guard let navigationController = navigationController else { return }
         StatementRouter.routeToStatement(on: navigationController)
         
