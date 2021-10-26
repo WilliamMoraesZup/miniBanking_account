@@ -13,6 +13,14 @@ struct AccountRouter {
         StatementSubModule.start(on: navigationController)
     }
     
+    static func routeToDeposit(on navigationController: UINavigationController) {
+        //StatementSubModule.start(on: navigationController)
+    }
+    
+    static func routeTobankSlip(on navigationController: UINavigationController) {
+        //StatementSubModule.start(on: navigationController)
+    }
+    
     
     
     
