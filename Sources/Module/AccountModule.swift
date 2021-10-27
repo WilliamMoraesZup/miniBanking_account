@@ -25,3 +25,13 @@ public final class AccountModule {
     }
     
 }
+
+extension AccountModule{
+    
+    static var bundle: Bundle {
+        
+        return Bundle.init(for: self)
+        
+    }
+    
+}
