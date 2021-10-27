@@ -30,4 +30,8 @@ final class AccountHomeViewController: ViewController,
         
     }
 
+    @IBAction func didTapPaymentButton(_ sender: Any) {
+        guard let navigationController = navigationController else { return }
+        PaymentRouter.routeToPayment(on: navigationController)
+    }
 }

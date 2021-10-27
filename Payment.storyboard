@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PaymentViewController" customModule="miniBanking_account" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHX-34-Rih" userLabel="CodBarra">
+                                <rect key="frame" x="24" y="69" width="366" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fJ5-dB-0uM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="line.horizontal.3" catalog="system" title="Leito de código de barras">
+                                    <color key="baseBackgroundColor" red="0.92156862750000001" green="0.21960784310000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o numero do código de barras" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQy-fg-ugw">
+                                <rect key="frame" x="25" y="287" width="364" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9gv-9I-yhY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rW6-YZ-20g" userLabel="Continuar">
+                                <rect key="frame" x="100" y="385" width="214" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="oLC-oH-ppq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrowshape.zigzag.right" catalog="system" title="Continuar">
+                                    <color key="baseBackgroundColor" red="0.92156862750000001" green="0.21960784310000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3x-rz-bUu">
+                                <rect key="frame" x="181" y="196" width="53" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.16862745100000001" green="0.21960784310000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="A3x-rz-bUu" firstAttribute="top" secondItem="DHX-34-Rih" secondAttribute="bottom" constant="77" id="BE6-3p-HwT"/>
+                            <constraint firstItem="A3x-rz-bUu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="181" id="FsJ-0r-eWv"/>
+                            <constraint firstItem="DHX-34-Rih" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="MsI-6o-pDk"/>
+                            <constraint firstItem="DHX-34-Rih" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="N8G-SG-vgR"/>
+                            <constraint firstItem="rW6-YZ-20g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="eoi-0r-igo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DHX-34-Rih" secondAttribute="trailing" constant="24" id="f1P-7U-b9M"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="A3x-rz-bUu" secondAttribute="trailing" constant="180" id="f9D-px-Q1A"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rW6-YZ-20g" secondAttribute="trailing" constant="100" id="g6v-q9-Goa"/>
+                            <constraint firstItem="wQy-fg-ugw" firstAttribute="top" secondItem="A3x-rz-bUu" secondAttribute="bottom" constant="54" id="hbk-tH-SWn"/>
+                            <constraint firstItem="wQy-fg-ugw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="hnj-2y-1LY"/>
+                            <constraint firstItem="rW6-YZ-20g" firstAttribute="top" secondItem="wQy-fg-ugw" secondAttribute="bottom" constant="48" id="qqO-O5-3rL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wQy-fg-ugw" secondAttribute="trailing" constant="25" id="zhJ-KY-Fro"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.zigzag.right" catalog="system" width="128" height="93"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+    </resources>
+</document>

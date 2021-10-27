@@ -21,6 +21,9 @@ struct AccountRouter {
         //StatementSubModule.start(on: navigationController)
     }
     
+    static func routeToPayment(on navigationController: UINavigationController) {
+        PaymentSubModule.start(on: navigationController)
+    }
     
     
     
